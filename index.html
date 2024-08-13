@@ -1,0 +1,106 @@
+<!--this edit connects the boards and home pages together
+
+David nunez
+davnunez@uat.edu
+
+27May2024
+
+27June2024
+the assignment Assignment 7.1: Event Driven Programming needs us to add two buttons,
+a start to move the picture around the page, and a stop, to stop movement
+
+16Jul2024
+the assignment 11.1 has us activate a sound on our webpage
+I will have a picture of a forest when clicked it will play this sound 
+https://www.storyblocks.com/audio/search/rain?media-type=sound-effects&search-origin=search_bar 
+
+
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>David's Webpage</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="code.js"></script>
+    <style>
+        th, td{
+            border: 1px solid rgb(49, 24, 0)
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header>
+        <h1>Welcome to David's Webpage</h1>
+    </header>
+    <nav>
+        <h2>Navigation</h2>
+        <h3><a href="./index.html">Home</a><br>
+            <a href="./boards.html">Boards</a><br>
+            <a href="./game.html">Game page</a><br>
+            <a href="./strings.html">Input Validation page</a>
+        </h3>
+    </nav>
+    <p>
+        The class is summer 2024. My teacher is Prof. Prater.
+    </p>
+
+    <marquee id="myMarquee" direction="right"><img id="memeImage" src="images.jpg"></marquee>
+    <br>
+    <br>
+    <center>
+        <button id="startButton" onclick="startFun();" class="ButtonStrt">Start</button>
+        <button id="stopButton" onclick="stopFun();" class="ButtonStp">Stop</button>
+    </center>
+    <br>
+    <br>
+    <!--We will put a table in here-->
+    <h2>Favorite The Chronicles of Narnia films</h2>
+    <table style="width: 60%;" id="table">
+        <colgroup>
+            <col span="1" style="width: 15%;">
+            <col span="1" style="width: 70%;">
+            <col span="1" style="width: 15%;">
+        </colgroup>
+        <tr>
+            <th>Ranking</th>
+            <th>Name</th>
+            <th>Year</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>The Lion, the Witch and the Wardrobe</td>
+            <td>2005</td>
+        </tr>
+        </tr>
+        <td>2</td>
+        <td>The Voyage of the Dawn Treader</td>
+        <td>2010</td>
+        </tr>
+        </tr>
+        <td>3</td>
+        <td>Prince Caspian</td>
+        <td>2008</td>
+        </tr>
+        <td>4</td>
+        <td>The Silver Chair</td>
+        <td>2024</td>
+    </table>
+    <br>
+    <br>
+    <img src="Rainforest_1.jpg" onclick="rainSounds();"><br>
+
+    <footer>
+        <br>
+        David Nunez<br>
+        University of Advancing Technology<br>
+        2625 W Baseline Rd, <br>
+        Tempe, AZ 85283 <br>
+        (800) 658-5744
+    </footer>
+</body>
+
+</html>
